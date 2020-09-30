@@ -14,7 +14,7 @@
         <div class="login-wrapper">
           <div class="login-container" id="login-container">
             <div class="login-form-container sign-up-container">
-              <form action="actions/register.php" method='post' id='registerForm'>
+              <form action="actions/register.php" method='post' id='registerForm' >
                 <h1>Create Account</h1>
                 <label for="name">Name</label>           
                 <input type="text" placeholder="Name" name='name' required id="registerName"/>

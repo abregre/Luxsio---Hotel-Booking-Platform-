@@ -7,7 +7,6 @@ $('#registerPassword').on('blur',validatePassword);
 $('#registerPasswordRepeat').on('blur',validatePasswordR);
 
 
-
 function validateName(){
   const name = $('#registerName');
   const reg = /^[a-zA-Z]{2,15}$/;

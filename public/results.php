@@ -73,8 +73,8 @@
             </p>
             <div id="slider-range" true></div>
 
-            <input placeholder="Check-in Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name='checkin' value='<?php echo $selectedCheckInDate ?>'/>
-            <input placeholder="Check-out Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name='checkout' value='<?php echo $selectedCheckOutDate ?>'/>
+            <input placeholder="Check-in Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="checkin" name='checkin' value='<?php echo $selectedCheckInDate ?>'/>
+            <input placeholder="Check-out Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="checkout" name='checkout' value='<?php echo $selectedCheckOutDate ?>'/>
             <button class="btn" type='submit' id='findHotel'>Find Hotel</button>
           </form>
          
