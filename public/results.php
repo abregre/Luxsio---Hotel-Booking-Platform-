@@ -92,7 +92,7 @@
                   <h2><?php echo $avail_room['name'] ?></h2>
                   <h3><?php echo $avail_room['city'] ?>, <?php echo $avail_room['area'] ?></h3>
                   <p><?php echo $avail_room['description_short'] ?></p>
-                  <a href="/public/room.php?room_id=<?php echo $avail_room['room_id']?>&check_in_date=<?php echo $selectedCheckInDate ?>&check_out_date=<?php echo $selectedCheckOutDate ?>" class="btn">Go to room page</a>
+                  <a href="/room.php?room_id=<?php echo $avail_room['room_id']?>&check_in_date=<?php echo $selectedCheckInDate ?>&check_out_date=<?php echo $selectedCheckOutDate ?>" class="btn">Go to room page</a>
                 </div>
                 <div class="result-details">
                   <p class="price-night">Per Night: <?php echo $avail_room['price'] ?>€</p>

@@ -157,23 +157,52 @@
           <div class="review-add-container">
             <h2>Add review</h2>
             <form class="review-add-body" name="reviewForm" method="post" action="actions/review.php">
-              <input type="hidden" name="room_id" value="<?php echo $roomId ?>">
-              <input type="hidden" name="user_id" value="<?php echo $userId ?>">
+              <input type="hidden" name="room_id" value="<?php echo $roomId ?>">              
               <input type="hidden" name="csrf" value="<?php echo User::getCsrf() ?>">
               <fieldset class="rating">
-                <input type="radio" name="rate" id="star5" value="5"/><label for="star5" class="full" title="Awesome - 5 stars"><i class="fa fa-star"></i></label>
-                <input type="radio" name="rate" id="star4" value="4"/><label for="star4" class="full" title="Pretty good - 4 stars"><i class="fa fa-star"></i></label>
+                <input type="radio" name="rate" id="star5" value="5" required/><label for="star5" class="full" title="Awesome - 5 stars"><i class="fa fa-star"></i></label>
+                <input type="radio" name="rate" id="star4" value="4" /><label for="star4" class="full" title="Pretty good - 4 stars"><i class="fa fa-star"></i></label>
                 <input type="radio" name="rate" id="star3" value="3"/><label for="star3" class="full" title="Meh - 3 stars"><i class="fa fa-star"></i></label>
                 <input type="radio" name="rate" id="star2" value="2"/><label for="star2" class="full" title="Kinda bad - 2 stars"><i class="fa fa-star"></i></label>
                 <input type="radio" name="rate" id="star1" value="1"/><label for="star1" class="full" title="Sucks big time - 1 star"><i class="fa fa-star"></i></label>
               </fieldset>              
-              <textarea name="comment" id="reviewField" rows="5" placeholder="Review"></textarea>             
+              <textarea name="comment" id="reviewField" rows="5" placeholder="Review" required></textarea>             
                 <div id="loadingGif" style="display:none"><img src="images/spinner.gif" width="80" height="80"></div>
               <button type="submit" class="btn btn-lg" id="reviewSubmit">Submit</button>
             </form>
           </div>
         </div>
       </div>
-    </main>
-    
-    <?php include('inc/footer.php'); ?>
+    </main>          
+    <footer id="main-footer">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          With
+          <a href="https://digitalurban.space" target="_blank" style="text-decoration: none;"
+            >❤️</a
+          > by DigitalUrban
+        </p>
+      </footer>
+      
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/room.js"></script>
+    <script src="js/validations.js"></script>
+    <script>    
+    //Map
+    function initMap() {
+    var hotel = {lat: <?php echo $roomInfo['location_lat'];?>, lng: <?php echo $roomInfo['location_long'];?>};
+    var map = new google.maps.Map(document.querySelector('#map'), {zoom: 18, center: hotel});  
+    var marker = new google.maps.Marker({position: hotel, map: map});
+    }
+    </script>
+    <script defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+    </body>
+    </html>

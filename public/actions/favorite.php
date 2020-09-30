@@ -37,6 +37,6 @@ if(!$isFavorite){
 }
 
 //Return room to favs
-header(sprintf('Location: /public/room.php?room_id=%s', $roomId));
+header(sprintf('Location: /room.php?room_id=%s', $roomId));
 
 

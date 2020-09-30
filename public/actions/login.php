@@ -41,5 +41,11 @@ setcookie('user_token', $token, time()+ (60*60*24), '/');
 
 //Return to homepage
 
-header('Location: /public/index.php');
+header('Location: /index.php');
+} else {
+  
+  header('Location: /login.php');
+  $_GET['error'] = true;
+  // echo '<script>alert("Invalid login details!");</script>';
+  return;
 }

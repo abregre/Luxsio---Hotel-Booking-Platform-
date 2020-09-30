@@ -13,7 +13,7 @@ if(strtolower($_SERVER['REQUEST_METHOD']) != 'get'){
 }
 //Check if user logged
 if (empty(User::getCurrentUserId())){
-  header('Location: /public/login.php');
+  header('Location: /login.php');
   return;
 }
 
@@ -34,7 +34,7 @@ $validBooking = $booking->insert($roomId, User::getCurrentUserId(), $checkInDate
 //Return room to favs
 if($validBooking){
 
-  header(sprintf('Location: /public/room.php?room_id=%s', $roomId));
+  header(sprintf('Location: /room.php?room_id=%s', $roomId));
   return;
 }
 

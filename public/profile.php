@@ -50,7 +50,7 @@
               <?php if (count($userFavorites)>0): ?>
                 <ol>
                   <?php foreach($userFavorites as $favorite): ?>
-                    <li><a href="/public/room.php?room_id=<?php echo $favorite['room_id'] ?>"><?php echo $favorite['name'] ?></a>
+                    <li><a href="/room.php?room_id=<?php echo $favorite['room_id'] ?>"><?php echo $favorite['name'] ?></a>
                     <br>
                    
                     </li>
@@ -75,7 +75,7 @@
                 <h2><?php echo $booking['name'] ?></h2>
                 <h3><?php echo $booking['city'] ?>, <?php echo $booking['area'] ?></h3>
                 <p><?php echo $booking['description_short'] ?></p>
-                <a href="/public/room.php?room_id=<?php echo $booking['room_id']?>" class="btn">Go to room page</a>
+                <a href="/room.php?room_id=<?php echo $booking['room_id']?>" class="btn">Go to room page</a>
               </div>
               <div class="result-details-profile">
                 <p class="total-cost">Total Cost: <?php echo $booking['total_price'] ?>€</p>
@@ -97,7 +97,7 @@
                <?php if (count($userReviews)>0): ?>
                 <ol>
                   <?php foreach($userReviews as $review): ?>
-                    <li><a href="/public/room.php?room_id=<?php echo $review['room_id'] ?>"><?php echo $review['name'] ?></a>
+                    <li><a href="/room.php?room_id=<?php echo $review['room_id'] ?>"><?php echo $review['name'] ?></a>
                     <span>
                       <?php 
                           $roomAvgReview = $roomInfo['avg_reviews'] ; 

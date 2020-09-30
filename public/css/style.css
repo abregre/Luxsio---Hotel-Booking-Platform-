@@ -169,6 +169,25 @@ nav a:active {
   width: 70%;
 }
 
+.login-wrapper span{
+    display: none;
+  }
+
+  .is-invalid{
+ border: 1px solid red!important;
+  }
+  .error{
+    display: block!important;
+    color: red;
+  }
+  .errorDates{
+    width: 100%;
+    color: red;
+    font-size: 1rem;
+    font-family: var(--ff-text);
+    text-align: center;
+  }
+
 /* Main container */
 
 .main-container {
@@ -288,6 +307,10 @@ nav a:active {
 #searchBtn:hover {
   color: var(--clr-secondary);
 }
+
+
+
+
 
 /* Results page starts here */
 
@@ -519,6 +542,7 @@ nav a:active {
 .login-wrapper {
   display: none;
 }
+
 
 /**
  * Tabs
@@ -846,6 +870,7 @@ width: 100%;
 height: 550px;
 background-color: var(--clr-secondary);
 border-radius: 40px;
+border: 10px solid var(--clr-primary);
 }
 
 
@@ -1091,7 +1116,7 @@ border-radius: 40px;
     min-height: 400px;
     border-radius: var(--border-r);
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 2% 1fr;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
@@ -1100,7 +1125,13 @@ border-radius: 40px;
       "title title"
       "select select"
       "input input"
+      "error error"
       "btn btn";
+  }
+  .errorDates{
+    grid-area: error;
+    font-size: 1.5rem;
+    line-height: auto;
   }
 
   .search-container h2 {
@@ -1328,10 +1359,16 @@ border-radius: 40px;
 
   .login-wrapper {
     width: 70%;
-    height: 50%;
+    height: 40rem;
     margin: auto;
     margin-top: 8%;
     display: block;
+  }
+  
+  .login-wrapper label{
+  color: var(--clr-primary);
+  font-size: 1rem;
+ 
   }
 
   .login-container {

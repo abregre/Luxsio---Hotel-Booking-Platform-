@@ -6,7 +6,7 @@
     //Get form data
     const formData = $(this).serialize();
     //Request
-    $.ajax('http://localhost/public/ajax/room_fav.php',
+    $.ajax('http://localhost/ajax/room_fav.php',
             {
             type: "POST",       
             dataType: "json",
@@ -27,7 +27,7 @@
     //Get form data
     const form = $(this).serialize();
     //Request
-    $.ajax('http://localhost/public/ajax/room_review.php',
+    $.ajax('http://localhost/ajax/room_review.php',
             {
             type: "POST",       
             dataType: "html",

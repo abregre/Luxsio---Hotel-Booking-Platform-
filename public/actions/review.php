@@ -35,5 +35,5 @@ $test = $review->addReview($roomId, User::getCurrentUserId(), $_REQUEST['rate'],
 
 
 //Return to room 
-header(sprintf('Location: /public/room.php?room_id=%s', $roomId));
+header(sprintf('Location: /room.php?room_id=%s', $roomId));
 

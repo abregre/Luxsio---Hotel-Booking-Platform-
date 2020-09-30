@@ -61,8 +61,9 @@ reviewHistory.addEventListener('click',()=>{
   profileBookings.classList.add('secret');
 })
 
-// //Logout -- NEEDS FIX
-// document.querySelector('#logout').addEventListener('click',()=>{
+//Logout 
+document.querySelector('#logout').addEventListener('click',()=>{
  
-//   document.cookie = 'user_token=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
-// })
+  document.cookie ='user_token=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
+  window.location.replace("http://luxsio.digitalurban.space")
+})
