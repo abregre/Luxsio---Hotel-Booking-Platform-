@@ -1,7 +1,5 @@
 <h1> Luxsio Booking platform </h1><br>
 
-Github Repo : https://github.com/abregre/Luxsio---Hotel-Booking-Platform-
-<br>
 Demo Deployment : https://luxsio.digitalurban.space
 <br>
 
