@@ -1,12 +1,35 @@
-<h1> Luxsio Booking platform </h1>
+<h1> Luxsio Booking platform </h1><br>
 
 Github Repo : https://github.com/abregre/Luxsio---Hotel-Booking-Platform-
 Demo Deployment : https://luxsio.digitalurban.space
+<br>
 
-<h2>To be added later<h2><br>
+
+<strong>Description</strong><br>
+
+Website that you can search and book hotel rooms in Greece<br>
+
+<strong>Vision</strong><br>  
 <ul>
   <li>Order functionality on results page</li>
-  <li>Display how many results came out</li>
+  <li>Display how many results came out after filtes applied</li>
   <li>UI/UX Improvements</li>
-  <li>Saving user inputs in session for using after login/register</li>
+  
 </ul>
+<br>
+ 
+<strong>Stack</strong><br>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>PHP</li>
+  <li>MySQL</li>  
+</ul>
+ <br>
+
+<strong>Stage</strong><br>
+
+The project is fully functional, yet to be made some refines mentioned on the vision section
+
+
