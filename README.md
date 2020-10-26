@@ -6,7 +6,7 @@ Demo Deployment : https://luxsio.digitalurban.space
 
 <strong>Description</strong><br>
 
-Website that you can search and book hotel rooms in Greece<br>
+Web App that you can search and book hotel rooms in Greece<br>
 
 <strong>Vision</strong><br>  
 <ul>
